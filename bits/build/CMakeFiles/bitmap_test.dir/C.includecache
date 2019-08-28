@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jlbwm/a2_c_refresher_jlbwm/bits/include/bitmap.h
+stdint.h
+-
+stdlib.h
+-
+stdbool.h
+-
+
+/home/jlbwm/a2_c_refresher_jlbwm/bits/src/bitmap.c
+../include/bitmap.h
+/home/jlbwm/a2_c_refresher_jlbwm/bits/include/bitmap.h
+math.h
+-
+

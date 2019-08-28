@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jlbwm/a2_c_refresher_jlbwm/strings/include/sstring.h
+stdbool.h
+-
+
+/home/jlbwm/a2_c_refresher_jlbwm/strings/src/sstring.c
+string.h
+-
+errno.h
+-
+stdio.h
+-
+stdlib.h
+-
+../include/sstring.h
+/home/jlbwm/a2_c_refresher_jlbwm/strings/include/sstring.h
+

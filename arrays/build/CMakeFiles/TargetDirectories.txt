@@ -1,0 +1,4 @@
+/home/jlbwm/a2_c_refresher_jlbwm/arrays/build/CMakeFiles/rebuild_cache.dir
+/home/jlbwm/a2_c_refresher_jlbwm/arrays/build/CMakeFiles/edit_cache.dir
+/home/jlbwm/a2_c_refresher_jlbwm/arrays/build/CMakeFiles/test.dir
+/home/jlbwm/a2_c_refresher_jlbwm/arrays/build/CMakeFiles/arrays_test.dir

@@ -1,10 +1,10 @@
 # A2 - C Refresher
 Set 1:
 
-- arrays
-- strings
-- system programming
-- bits
+- arrays: Aug 27
+- strings: Aug 27
+- system programming: Aug 27
+- bits: Aug 27
 
 Set 2:
 

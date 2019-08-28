@@ -6,7 +6,7 @@
 #include <stdint.h>
 #include <unistd.h>
 
-//
+
 // NOTE THE FILE I/O MUST USE OPEN, READ, WRITE, CLOSE, SEEK, STAT with file descriptors (NO FILE*)
 // Make sure to uint8_t or uint32_t, you are dealing with system dependent sizes
 
