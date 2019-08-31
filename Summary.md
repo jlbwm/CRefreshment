@@ -89,3 +89,16 @@ ca > cb => >0
 - `flag = flag << pos`: flag = 0000...010...000   (shifted k positions)
 - `A[i] = A[i] | flag`
 
+# allocation
+
+1. `void *malloc(size_t n)`
+
+- When allocation succeed, it return a pointer, point to the n byte legth uninitialized space, othersize return NULL.
+
+2. `void *calloc(size_t n, size_t size)`
+
+- When allocation succeed, it return a pointer, point to the n's size legth space, and initialize to 0, othersize return NULL.
+
+3. `void *realloc(void *p, size_t size)`
+
+- change p pointed space to size byte. if new allocated space larger than origin, original contents remain unchanged, otherwise, a malloc will occur and p not change.

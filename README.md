@@ -8,8 +8,8 @@ Set 1:
 
 Set 2:
 
-- allocation
-- debug
+- allocation: Aug 31
+- debug: Aug 31
 - error_handling
 - structures
 
