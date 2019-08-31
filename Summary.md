@@ -81,4 +81,11 @@ ca > cb => >0
 - metadata: the struct to store informations
 - return: -1 if error
 
+# bitmap
+
+- `int i = k/32`: i = array index (use: A[i])
+- `int pos = k%32`: pos = bit position in A[i]
+- `unsigned int flag = 1`: flag = 0000.....00001
+- `flag = flag << pos`: flag = 0000...010...000   (shifted k positions)
+- `A[i] = A[i] | flag`
 
