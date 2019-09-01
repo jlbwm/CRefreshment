@@ -3,6 +3,9 @@
  
 ###C###
 
+### Ignore the .vscode directory
+*/.vscode vscode
+
 # Object files
 *.o
 
