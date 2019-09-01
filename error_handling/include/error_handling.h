@@ -18,8 +18,7 @@ typedef struct {
 }Record_t;
 
 // Allocates and zeros all the fields in the array of records
-// \param records a NULL Record_t pointer that will be allocated to the size
-//	of num_records
+// \param records a NULL Record_t pointer that will be allocated to the size of num_records
 // \param num_records the number of records that will be created
 // \return 0 for successful allocation and zero initialization
 // else returns -1 for bad parameters, -2 for unsuccessful allocation

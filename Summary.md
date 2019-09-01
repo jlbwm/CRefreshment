@@ -54,6 +54,7 @@ ca > cb => >0
     - O_RDONLY: Read Only
     - O_WRONLY: Write Only
     - O_RDWR: Read and Write
+- return : -1 if error
 
 2. `long lseek(int fd, long offset, int origin)`
 

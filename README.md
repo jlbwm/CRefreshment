@@ -10,8 +10,8 @@ Set 2:
 
 - allocation: Aug 31
 - debug: Aug 31
-- error_handling
-- structures
+- error_handling: Sep 1
+- structures: Sep 1
 
 Set 1 due Monday, September 2, 11:59 PM
 

@@ -61,7 +61,6 @@ typedef struct sample
 // Padding can be useful, e.g. to obtain some degree of polymorphism while using different data sets.
 // Note that these prevents you from using things such as enums which have no guaranteed size (Compiler may choose a smaller size so long as it holds all your values).
 // Additionally you are dependant on the sizes of your data types in order to determine your padding.
-
 typedef struct orange
 {
 	int type;
