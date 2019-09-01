@@ -102,4 +102,4 @@ ca > cb => >0
 
 3. `void *realloc(void *p, size_t size)`
 
-- change p pointed space to size byte. if new allocated space larger than origin, original contents remain unchanged, otherwise, a malloc will occur and p not change.
+- Change p pointed space to size byte. if new allocated space larger than origin, original contents remain unchanged, otherwise, a malloc will occur and p not change.
