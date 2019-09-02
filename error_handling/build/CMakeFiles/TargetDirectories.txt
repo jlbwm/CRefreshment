@@ -1,4 +1,0 @@
-/home/jlbwm/a2_c_refresher_jlbwm/error_handling/build/CMakeFiles/rebuild_cache.dir
-/home/jlbwm/a2_c_refresher_jlbwm/error_handling/build/CMakeFiles/edit_cache.dir
-/home/jlbwm/a2_c_refresher_jlbwm/error_handling/build/CMakeFiles/test.dir
-/home/jlbwm/a2_c_refresher_jlbwm/error_handling/build/CMakeFiles/error_handling_test.dir
