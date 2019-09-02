@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jlbwm/a2_c_refresher_jlbwm/error_handling/include/error_handling.h
+stdbool.h
+-
+stddef.h
+-
+sys/types.h
+-
+stdint.h
+-
+
+/home/jlbwm/a2_c_refresher_jlbwm/error_handling/test/tests.cpp
+stdio.h
+-
+sys/stat.h
+-
+stdlib.h
+-
+stdint.h
+-
+../include/error_handling.h
+/home/jlbwm/a2_c_refresher_jlbwm/error_handling/include/error_handling.h
+gtest/gtest.h
+-
+

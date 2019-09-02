@@ -22,18 +22,18 @@
 // \param dst_size the total number of bytes the destination variable contains
 // return true if operation was successful, else false
 bool bulk_read(const char *input_filename, void *dst, const size_t offset, const size_t dst_size) {
-    if (input_filename == NULL || dst == NULL || offset < 0 || dst_size <= 0) {
+    if (input_filename == NULL || dst == NULL) {
         return false;
     }
     int file = open(input_filename, O_RDONLY);
     if (file == -1) {
         return false;
     }
-    if (lseek(file, offset, SEEK_CUR) != offset) {
+    if (lseek(file, offset, SEEK_SET) != offset) {
         close(file);
         return false;
     }
-    if (read(file, dst, dst_size) <= 0) {
+    if (read(file, dst, dst_size) != dst_size) {
         close(file);
         return false;
     }
@@ -48,18 +48,18 @@ bool bulk_read(const char *input_filename, void *dst, const size_t offset, const
 // \param src_size the total number of bytes the src variable contains
 // return true if operation was successful, else false
 bool bulk_write(const void *src, const char *output_filename, const size_t offset, const size_t src_size) {
-    if (src == NULL || output_filename == NULL || offset < 0 || src_size <= 0) {
+    if (src == NULL || output_filename == NULL) {
         return false;
     }
     int file = open(output_filename, O_WRONLY);
     if (file == -1) {
         return false;
     }
-    if (lseek(file, offset, SEEK_CUR) != offset) {
+    if (lseek(file, offset, SEEK_SET) != offset) {
         close(file);
         return false;
     }
-    if (write(file, src, src_size) <= 0) {
+    if (write(file, src, src_size) != src_size) {
         close(file);
         return false;
     }
@@ -95,7 +95,7 @@ bool file_stat(const char *query_filename, struct stat *metadata) {
 // \param src_count the number of src_data elements
 // \return true if successful, else false for failure
 bool endianess_converter(uint32_t *src_data, uint32_t *dst_data, const size_t src_count) {
-    if(src_data == NULL || dst_data == NULL || src_count <= 0) 
+    if(src_data == NULL || dst_data == NULL || src_count == 0) 
     { 
         return false;
     }

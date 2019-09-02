@@ -89,7 +89,7 @@ size_t bitmap_ffs(const bitmap_t *const bitmap) {
     }
     int i;
     for (i = 0; i < bitmap->bit_count; i++) {
-        if (bitmap_test(bitmap, i) == true) {
+        if (bitmap_test(bitmap, i)) {
             return i;
         }
     }
@@ -106,7 +106,7 @@ size_t bitmap_ffz(const bitmap_t *const bitmap) {
     }
     int i;
     for (i = 0; i < bitmap->bit_count; i++) {
-        if (bitmap_test(bitmap, i) == false) {
+        if (!bitmap_test(bitmap, i)) {
             return i;
         }
     }
