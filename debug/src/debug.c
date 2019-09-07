@@ -6,7 +6,7 @@
 
 // protected function, that only this .c can use
 int comparator_func(const void *a, const void *b) {
-    return *(uint8_t*)a - *(uint8_t*)b;
+    return *(uint16_t*)a - *(uint16_t*)b;
 }
 
 // sorts an array and validates the array upto value_count
